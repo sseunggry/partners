@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>페이지 가이드</title>
+    <script type="text/javascript" src="./assets/js/plugin/jquery-3.4.1.min.js"></script>
+    <style>
+        * {margin:0;padding:0;font-family:'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', '돋움', sans-serif;}
+        html, body {overflow:auto;}
+        ol, ul, dl {margin:0 !important;padding:0;}
+        li {list-style:none;}
+        p {margin-bottom:0;}
+
+        .container{padding: 60px;}
+        .page_title{margin-bottom: 30px;}
+        .al-c{text-align: center;}
+
+        .table_wrap{overflow: auto;}
+        table{min-width: 960px; border:1px solid #ddd; border-top:0; border-left:0;}
+        table th{background: #eee;}
+        table th, table td {border-left:1px solid #ddd; border-top:1px solid #ddd; padding:8px 15px; font-size:16px;}
+    </style>
+</head>
+
+<body>
+<div class="wrap">
+    <!-- content -->
+    <main>
+        <div class="container">
+            <h1 class="page_title">Publishing List</h1>
+            <div class="content">
+                <!-- table -->
+                <div class="table_wrap">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <colgroup>
+                            <col width="12%" />
+                            <col width="20%" />
+                            <col width="22%" />
+                            <col width="5%" />
+                            <col width="*" />
+                            <col width="10%" />
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>1Depth</th>
+                            <th>2Depth</th>
+                            <th>3Depth</th>
+                            <th>Page Type</th>
+                            <th>Page Link</th>
+                            <th>비고</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>홈</td>
+                            <td>메인</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/main/index.html">/main/index.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="15">링크생성</td>
+                            <td rowspan="5">상품 링크</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/link.html">/link/link.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>전환율 BEST</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/link_detail.html">/link/link_detail.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상품링크생성-상품링크생성</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/link_create_01.html">/link/link_create_01.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상품링크생성-HTML 생성</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/link_create_02.html">/link/link_create_02.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상품검색 결과</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/search_result.html">/link/search_result.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>페이지 링크</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/page.html">/link/page.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">이벤트/프로모션 링크</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/event.html">/link/event.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>링크 생성</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/event_create.html">/link/event_create.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6">다이나믹 배너</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/dynamic.html">/link/dynamic.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>결과 없을 시</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/dynamic_nodata.html">/link/dynamic_nodata.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>알럿 - 배너 삭제</td>
+                            <td class="al-c">U</td>
+                            <td><a href="./html/link/alert.html">/link/alert.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>배너 생성</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/dynamic_create.html">/link/dynamic_create.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>팝업 - 배너 데이터 추가 </td>
+                            <td class="al-c">U</td>
+                            <td><a href="./html/link/popup_search.html">/link/popup_search.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>팝업 - 배너 데이터 추가 - 검색 결과</td>
+                            <td class="al-c">U</td>
+                            <td><a href="./html/link/popup_search_result.html">/link/popup_search_result.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>카테고리 배너</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/link/category_create.html">/link/category_create.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="17">리포트</td>
+                            <td rowspan="6">실적리포트</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/performance.html">/report/performance.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>다이나믹 배너 리포트</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/dynamic.html">/report/dynamic.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세 실적 - 상품 선택 시</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/detail.html">/report/detail.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세 실적 - 실적 없을 시</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/detail_nodata.html">/report/detail_nodata.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세 실적 - 링크형태 선택 시</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/detail.html">/report/detail.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세 실적 - 실적 없을 시</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/detail_nodata.html">/report/detail_nodata.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="8">정산리포트</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/calculate.html">/report/calculate.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>정산 내역 없을 시</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/calculate_nodata.html">/report/calculate_nodata.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>정산 리포트 - 상세</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/calculate_detail.html">/report/calculate_detail.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>지급 리포트 - 개인</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/payable.html">/report/payable.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>지급 리포트 - 정산내역 없을 시</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/payable_nodata.html">/report/payable_nodata.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>지급 리포트 - 사업자</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/payable_buisness.html">/report/payable_buisness.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>지급 신청</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/apply.html">/report/apply.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>알럿 - 결제정보 미등록시</td>
+                            <td class="al-c">U</td>
+                            <td><a href="./html/report/alert_01.html">/report/alert_01.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">다운로드</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/download.html">/report/download.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>리포트 다운로드 - 내역 없을 시</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/report/download_nodata.html">/report/download_nodata.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>알럿 - 리포트 삭제</td>
+                            <td class="al-c">U</td>
+                            <td><a href="./html/report/alert_02.html">/report/alert_02.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">API 센터</td>
+                            <td rowspan="2">API key 발급</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/api/index_01.html">/api/index_01.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/api/index_02.html">/api/index_02.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="11">고객센터</td>
+                            <td rowspan="5">이용문의</td>
+                            <td>자주 묻는 질문</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/service/faq.html">/service/faq.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>문의하기 - 목록</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/service/inquiry_list.html">/service/inquiry_list.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>문의하기 - 목록 - 내역 없을 시</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/service/inquiry_nodata.html">/service/inquiry_nodata.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>문의하기 - 등록</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/service/inquiry_register.html">/service/inquiry_register.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>공지사항</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/service/notice.html">/service/notice.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">이용 가이드</td>
+                            <td>파트너스 가이드</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/service/use_partners.html">/service/use_partners.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>다이나믹 배너 가이드</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/service/use_dynamic.html">/service/use_dynamic.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>파트너스 API 가이드</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/service/use_api.html">/service/use_api.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>이용약관</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/service/terms.html">/service/terms.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>운영정책</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/service/policy.html">/service/policy.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>개인정보 처리방침</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/service/privacy.html">/service/privacy.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>알림</td>
+                            <td></td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/alarm/index.html">/alarm/index.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="12">마이페이지</td>
+                            <td rowspan="6">마이페이지</td>
+                            <td>개인회원/개인사업자 - 계산서 없을 시 1</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/mypage/index_01.html">/mypage/index_01.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>개인회원/개인사업자 - 홍보 채널, 채널 아이디 정보 없을 시</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/mypage/index_nodata.html">/mypage/index_nodata.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>개인회원/개인사업자 - 계산서 없을 시 2</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/mypage/index_02.html">/mypage/index_02.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>사업자 - 계산서 있을 시 1</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/mypage/index_03.html">/mypage/index_03.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>사업자 - 계산서 있을 시 2</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/mypage/index_04.html">/mypage/index_04.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>사업자 - 계산서 있을 시 3</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/mypage/index_04.html">/mypage/index_05.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>회원탈퇴</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/mypage/leave.html">/mypage/leave.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">팝업</td>
+                            <td>홍보 채널 정보 추가</td>
+                            <td class="al-c">U</td>
+                            <td><a href="./html/mypage/popup_01.html">/mypage/popup_01.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>인증 스크린샷 업로드</td>
+                            <td class="al-c">U</td>
+                            <td><a href="./html/mypage/popup_02.html">/mypage/popup_02.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">알럿</td>
+                            <td>채널 아이디 추가</td>
+                            <td class="al-c">U</td>
+                            <td><a href="./html/mypage/alert_01.html">/mypage/alert_01.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>채널 아이디 삭제</td>
+                            <td class="al-c">U</td>
+                            <td><a href="./html/mypage/alert_02.html">/mypage/alert_02.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>로그아웃 시도 시</td>
+                            <td class="al-c">U</td>
+                            <td><a href="./html/mypage/alert_03.html">/mypage/alert_03.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="9">회원가입</td>
+                            <td>회원가입</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/join/index.html">/join/index.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>약관동의</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/join/terms.html">/join/terms.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>개인</td>
+                            <td>기본정보</td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/join/user_register.html">/join/user_register.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">사업자</td>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/join/company_register_01.html">/join/company_register_01.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/join/company_register_02.html">/join/company_register_02.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/join/company_register_02_02.html">/join/company_register_02_02.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/join/company_register_03.html">/join/company_register_03.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="al-c">P</td>
+                            <td><a href="./html/join/company_register_04.html">/join/company_register_04.html</a></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+            </div>
+        </div>
+    </main>
+    <!-- //content -->
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('table td a').attr('target', '_blank');
+    });
+</script>
+</body>
+</html>

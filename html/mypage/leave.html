@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/sub.css">
+<script type="text/javascript" src="../../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../../assets/js/common.js"></script>
+<title>partners</title>
+
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+<div class="header">
+    <h1 class="logo">
+        <a href="#!"><img src="../../assets/img/common/logo.png" alt=""></a>
+    </h1>
+
+    <div class="menu-list">
+        <!-- 활성화 된 메뉴 item 태그에 on class 추가 -->
+        <div class="item on">
+            <h2><a href="../link/link.html">링크 생성</a></h2>
+            <ul class="sub-menu">
+                <li><a href="../link/link.html"><h3>링크 생성</h3></a></li>
+                <li><a href="../link/page.html"><h3>페이지 링크</h3></a></li>
+                <li><a href="../link/event.html"><h3>이벤트/프로모션 링크</h3></a></li>
+                <li><a href="../link/dynamic.html"><h3>다이나믹 배너</h3></a></li>
+                <li><a href="../link/category_create.html"><h3>카테고리 배너</h3></a></li>
+                <li><a href="#!"><h3>검색 위젯</h3></a></li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2><a href="../report/performance.html">리포트</a></h2>
+            <ul class="sub-menu">
+                <li>
+                    <h3>실적 리포트</h3>
+                    <ul class="list">
+                        <li><a href="../report/performance.html">실적 리포트</a></li>
+                        <li><a href="../report/dynamic.html">다이나믹배너 리포트</a></li>
+                        <li><a href="../report/detail.html">상세 실적 리포트</a></li>
+                        <li><a href="#!">추천인 리포트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>정산 리포트</h3>
+                    <ul class="list">
+                        <li><a href="../report/calculate.html">정산 리포트</a></li>
+                        <li><a href="../report/payable.html">지급 리포트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>다운로드</h3>
+                    <ul class="list">
+                        <li><a href="../report/download.html">리포트 다운로드</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2><a href="../api/index_01.html">API 센터</a></h2>
+            <ul class="sub-menu">
+                <li><a href="../api/index_01.html"><h3>API key 발급</h3></a></li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2><a href="../service/faq.html">고객센터</a></h2>
+            <ul class="sub-menu">
+                <li>
+                    <h3>이용 문의</h3>
+                    <ul class="list">
+                        <li><a href="../service/faq.html">자주 묻는 질문</a></li>
+                        <li><a href="../service/inquiry_list.html">문의하기</a></li>
+                        <li><a href="../service/notice.html">공지사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>이용 가이드</h3>
+                    <ul class="list">
+                        <li><a href="../service/use_partners.html">파트너스 가이드</a></li>
+                        <li><a href="../service/use_dynamic.html">다이나믹 배너 가이드</a></li>
+                        <li><a href="../service/use_api.html">파트너스 API 가이드</a></li>
+                    </ul>
+                </li>
+                <li><a href="../service/terms.html"><h3>이용약관</h3></a></li>
+                <li><a href="../service/policy.html"><h3>운영정책</h3></a></li>
+                <li><a href="../service/privacy.html"><h3>개인정보 처리방침</h3></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="util-menu">
+        <a href="../alarm/index.html" class="alarm">
+            <i class="ico ico-alarm"></i>
+            <span>12</span>
+        </a>
+
+        <a href="../mypage/index_01.html" class="user">
+            <i class="ico ico-user"></i>
+            <strong>AF00000</strong>
+        </a>
+    </div>
+
+    <button type="button" class="ico-menu mo-only"></button>
+    <div class="mob-menu">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#!"><img src="../../assets/img/common/logo.png" alt=""></a>
+                </h1>
+                <button type="button" class="ico-close"></button>
+            </div>
+            <div class="util-menu">
+                <a href="../mypage/index_01.html" class="user">
+                    <i class="ico ico-user"></i>
+                    <strong>AF00000</strong>
+                </a>
+                <a href="../alarm/index.html" class="alarm">
+                    <i class="ico ico-alarm"></i>
+                    <span>12</span>
+                </a>
+            </div>
+            <div class="menu">
+                <div class="item">
+                    <h2>링크 생성</h2>
+                    <ul class="sub-menu">
+                        <li><a href="../link/link.html"><h3>링크 생성</h3></a></li>
+                        <li><a href="../link/page.html"><h3>페이지 링크</h3></a></li>
+                        <li><a href="../link/event.html"><h3>이벤트/프로모션 링크</h3></a></li>
+                        <li><a href="../link/dynamic.html"><h3>다이나믹 배너</h3></a></li>
+                        <li><a href="../link/category_create.html"><h3>카테고리 배너</h3></a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h2>리포트</h2>
+                    <ul class="sub-menu">
+                        <li>
+                            <!-- 하위 메뉴 .list 있을 시 ico-more 클래스 추가 -->
+                            <h3 class="ico-more">실적 리포트</h3>
+                            <ul class="list">
+                                <li><a href="../report/performance.html">실적 리포트</a></li>
+                                <li><a href="../report/dynamic.html">다이나믹배너 리포트</a></li>
+                                <li><a href="../report/detail.html">상세 실적 리포트</a></li>
+                                <li><a href="#!">추천인 리포트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="ico-more">정산 리포트</h3>
+                            <ul class="list">
+                                <li><a href="../report/calculate.html">정산 리포트</a></li>
+                                <li><a href="../report/payable.html">지급 리포트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="ico-more">다운로드</h3>
+                            <ul class="list">
+                                <li><a href="../report/download.html">리포트 다운로드</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h2>API 센터</h2>
+                    <ul class="sub-menu">
+                        <li><a href="../api/index_01.html"><h3>API key 발급</h3></a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h2>고객센터</h2>
+                    <ul class="sub-menu">
+                        <li>
+                            <h3 class="ico-more">이용 문의</h3>
+                            <ul class="list">
+                                <li><a href="../service/faq.html">자주 묻는 질문</a></li>
+                                <li><a href="../service/inquiry_list.html">문의하기</a></li>
+                                <li><a href="../service/notice.html">공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="ico-more">이용 가이드</h3>
+                            <ul class="list">
+                                <li><a href="../service/use_partners.html">파트너스 가이드</a></li>
+                                <li><a href="../service/use_dynamic.html">다이나믹 배너 가이드</a></li>
+                                <li><a href="../service/use_api.html">파트너스 API 가이드</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../service/terms.html"><h3>이용약관</h3></a></li>
+                        <li><a href="../service/policy.html"><h3>운영정책</h3></a></li>
+                        <li><a href="../service/privacy.html"><h3>개인정보 처리방침</h3></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--// header -->
+        
+        <!-- frame -->
+        <div class="frame">
+            <!-- nav -->
+<div class="nav">
+    <!-- 활성화 된 메뉴 li 태그에 active class 추가 -->
+    <ul class="nav-list">
+        <li class="active">
+            <h3>마이페이지</h3>
+            <ul class="list">
+                <li class="active"><a href="../mypage/index_01.html">마이페이지</a></li>
+                <li><a href="../mypage/alert_03.html">로그아웃</a></li>
+                <li><a href="../mypage/leave.html">회원탈퇴</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!-- // nav -->
+        
+            <!-- contents -->
+            <div class="contents">
+                <p class="location">
+                    <span>마이페이지</span>
+                    <span>회원탈퇴</span>
+                </p>
+
+                <section class="leave-con">
+                    <h2 class="tit-l">회원탈퇴</h2>
+
+                    <div class="step-con">
+                        <h3 class="tit-m">STEP1.  탈퇴 사유 선택</h3>
+                        <div class="white-box">
+                            <div class="inp-radio">
+                                <input type="radio" id="radio1" name="radio">
+                                <label class="inp-label" for="radio1">사업을 중단했습니다.</label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" id="radio2" name="radio">
+                                <label class="inp-label" for="radio2">수익이 만족스럽지 않습니다.</label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" id="radio3" name="radio">
+                                <label class="inp-label" for="radio3">계정이 여러 개라 정리가 필요합니다.</label>
+                            </div>
+                            <div class="etc-con">
+                                <div class="inp-radio">
+                                    <input type="radio" id="radio4" name="radio">
+                                    <label class="inp-label" for="radio4">수익이 만족스럽지 않습니다.</label>
+                                </div>
+                                <div class="inp inp-text-area">
+                                    <div class="inp-group">
+                                        <textarea placeholder="탈퇴를 하시는 이유를 자세히 알려주세요. 더 나은 서비스를 위해 노력하겠습니다."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-con">
+                        <h3 class="tit-m">STEP2.  탈퇴 관련 정책 동의</h3>
+                        <div class="white-box">
+                            <div class="guide-con">
+                                <ul>
+                                    <li>탈퇴 이후에는 기존의 데이터(수익, 정산 포함)를 확인할 수 없습니다.</li>
+                                    <li>탈퇴 이후 발생하는 수익은 확인 불가하며, 지급되지 않습니다.</li>
+                                </ul>
+                                <ul>
+                                    <li>탈퇴 신청은 취소 불가합니다.</li>
+                                    <li>탈퇴 신청 이후에는 정산 관련 기능을 제외한 파트너스 기능은 사용할 수 없습니다.</li>
+                                    <li>추천인 혹은 피추천인 경우 다음 정산일 이후의 잔여 수익금까지 지급이 완료된 후 탈퇴 처리 됩니다.</li>
+                                    <li>탈퇴 신청일 기준 잔여 수익금이 있는 경우 지급이 완료된 후 탈퇴처리됩니다.</li>
+                                    <li>탈퇴 신청일 기준 잔여 수익금이 없는 경우 바로 탈퇴처리 됩니다.</li>
+                                </ul>
+                                <ul>
+                                    <li>탈퇴 이후 재 가입이 가능합니다.</li>
+                                </ul>
+                            </div>
+                            <div class="inp-chk">
+                                <input type="checkbox" id="chk1">
+                                <label for="chk1">
+                                    <span class="chk-txt">탈퇴 관련 정책에 동의합니다.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-con">
+                        <h3 class="tit-m">STEP3.  잔여 수익금 처리</h3>
+                        <div class="white-box">
+                            <div class="inp-radio">
+                                <input type="radio" id="radio5" name="radio2">
+                                <label class="inp-label" for="radio5">지금 바로 탈퇴하고 싶습니다.</label>
+                                <p class="txt">바로 탈퇴를 선택하시는 경우 잔여 수익금 및 추천 관련 미래 수익금을  받을 수 없습니다.</p>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" id="radio6" name="radio2">
+                                <label class="inp-label" for="radio6">잔여 수익금을 지급받고 싶습니다.</label>
+                                <p class="txt">잔여 수익금은 익월 N일에서 N일 사이에 지급 신청하셔야 하며, 지급이 완료된 후에 탈퇴 처리가 완료됩니다. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-check-con">
+                        <div class="white-box">
+                            <div class="inp-chk">
+                                <input type="checkbox" id="chk2">
+                                <label for="chk2">
+                                    <span class="chk-txt">탈퇴 관련 안내 사항을 모두 확인했습니다.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-con">
+                        <a href="#!" class="btn btn-l bg-black">탈퇴 신청</a>
+                    </div>
+
+                </section>
+
+            </div>
+            <!-- // contents -->
+
+        </div>
+        <!-- // frame -->
+
+        <!-- footer -->
+<div class="footer">
+    <div class="link-list">
+        <li><a href="#!">이용 약관</a></li>
+        <li><a href="#!">운영정책</a></li>
+        <li><a href="#!">개인정보 처리방침</a></li>
+    </div>
+    <ul class="address">
+        <li>법인명 (상호) : Partners </li>
+        <li>사업자등록번호 : 120-88-00767 <a href="#!" class="link">사업자정보 확인</a></li>
+        <li>주소 : 서울시 송파구 송파대로 570</li>
+        <li>대표 : 홍길동</li>
+    </ul>
+    <p class="copyright">Copyright © Partners. All Rights Reserved.</p>
+</div>
+<!--// footer -->
+
+    </div>
+<script>
+
+</script>
+</body>
+</html>
