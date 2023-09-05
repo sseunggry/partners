@@ -33,7 +33,8 @@
 }
 
 .inp .inp-group.ico-upload-group {
-	padding: 4px 20px;
+	position: relative;
+	padding: 4px 50px 4px 20px;
 	min-height: 50px;
 	height: auto;
 }
@@ -117,11 +118,25 @@
 	line-height: 1.3;
 }
 
-.inp .uploaded .inp-group .ico-upload {
+.inp.inp-upload .btn-con {
 	display: none;
 }
 
-.inp .uploaded .inp-group .inp-file-text {
+.inp .uploaded .ico-upload {
+	display: none;
+}
+
+.inp .uploaded .ico-multi {
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+.inp .uploaded .inp-file-text {
 	display: none;
 }
 
@@ -709,9 +724,19 @@
 		font-size: 2.5vw;
 	}
 
-	.inp .inp-group.ico-upload-group {
+	.inp .ico-upload-group {
 		padding: 2.78vw 2.78vw;
 		min-height: 11.11vw;
+	}
+
+	.inp .uploaded .ico-upload {
+		display: none;
+	}
+
+	.inp.inp-upload .uploaded .btn-con {
+		display: block;
+		margin-top: 2.78vw;
+		width: 100%;
 	}
 
 	.inp-file-list {

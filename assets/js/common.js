@@ -27,6 +27,30 @@ $(function(){
 		}
 	});
 
+	// checkbox event
+	$("#chk_all").on("change", function(){
+		if( $(this).prop("checked") ) {
+			$(".check-list input[type='checkbox']").each(function(){
+				$(this).prop("checked", true);
+			});
+		} else {
+			$(".check-list input[type='checkbox']").each(function(){
+				$(this).prop("checked", false);
+			});
+		}
+	});
+
+	$(".check-list input[type='checkbox']").on("change", function(){
+		let chk = true;
+		$(".check-list input[type='checkbox']").each(function(){
+			if( !$(this).prop("checked") ) {
+				chk = false;
+			}
+		});
+		$("#chk_all").prop("checked", chk);
+	});
+
+
 	gnbEventFn();
 	selectClickFn();
 	moGnbEventFn();
@@ -37,11 +61,19 @@ $(function(){
 
 function gnbEventFn(){
 	$(".header .menu-list .item h2").on("mouseenter", function(){
-		$(this).closest(".item").addClass("on").siblings().removeClass("on");
+		$(".header .menu-list .item h2").removeClass("active");
+		$(".header .menu-list .item .sub-list").removeClass("active");
+
+		$(this).addClass("active");
+		$(this).siblings(".sub-list").addClass("active");
 	});
 
-	$(".header .menu-list .item .sub-menu").on("mouseleave", function(){
-		$(this).closest(".item").removeClass("on");
+	$(".header .menu-list .item .sub-list").on("mouseleave", function(){
+		$(this).removeClass("active");
+	});
+
+	$(".header").on("mouseleave", function(){
+		$(".header .menu-list .item .sub-list").removeClass("active");
 	});
 }
 
@@ -142,13 +174,18 @@ function popupCloseFn(id){
 }
 
 function selectClickFn(){
-	$(".inp-select .select").on("click", function(){
-		let $select = $(this).closest(".inp-select");
+	$(".inp-select .select").on("click", function(event){
+		event.stopPropagation();
 
-		if(!$select.hasClass("on")){
+		let $select = $(this).closest(".inp-select"),
+			$wrap = document.querySelector(".wrap");
+
+		if(!$select.hasClass("on")){            
 			$select.addClass("on").siblings().removeClass("on");
+			$wrap.addEventListener("click", selectClickTrigger);
 		} else{
 			$select.removeClass("on");
+			$wrap.removeEventListener(selectClickTrigger);
 		}
 	});
 
@@ -158,6 +195,14 @@ function selectClickFn(){
 
 		$select.removeClass("on");
 		$select.find(".selected-value").text($optionValue).addClass("bold");
+	});
+}
+
+function selectClickTrigger(){
+	$(".inp-select").each(function(){
+		if( $(this).hasClass("on") ) {
+			$(this).removeClass("on");
+		}
 	});
 }
 
@@ -174,4 +219,31 @@ function floatingBtnFn(){
 			$floatingCon.stop().slideUp("500");
 		}
 	});
+}
+
+function delFile(){
+	if( $(event.target).parents(".inp-file-list").find("li").length <= 1 ) {
+		$(event.target).parents(".inp-upload").removeClass("readonly");
+		$(event.target).parents(".inp-area").removeClass("uploaded");
+	}
+	$(event.target).parents("li").remove();
+
+}
+
+function comma(str) {
+	str = String(str);
+	return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, "$1,");
+}
+
+function uncomma(str) {
+	str = String(str);
+	return str.replace(/[^\d]+/g, "");
+} 
+
+function inputNumberFormat(obj) {
+	if( obj.value == "" ) {
+		obj.value = "";
+	} else {
+		obj.value = "￦"+comma(uncomma(obj.value));
+	}
 }

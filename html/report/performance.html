@@ -20,11 +20,16 @@
 <meta property="og:url" content="">
 
 <link rel="stylesheet" type="text/css" href="../../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/plugin/daterangepicker.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/common.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/sub.css">
 <script type="text/javascript" src="../../assets/js/plugin/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="../../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/dayjs.min.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/dayjs.plugin.combine.js"></script>
+<script type="text/javascript" src="../../assets/js/plugin/daterangepicker.js"></script>
+<script type="text/javascript" src="../../assets/js/picker.js"></script>
 <script type="text/javascript" src="../../assets/js/common.js"></script>
 <title>partners</title>
 
@@ -38,74 +43,82 @@
     </h1>
 
     <div class="menu-list">
-        <!-- 활성화 된 메뉴 item 태그에 on class 추가 -->
-        <div class="item on">
-            <h2><a href="../link/link.html">링크 생성</a></h2>
-            <ul class="sub-menu">
-                <li><a href="../link/link.html"><h3>링크 생성</h3></a></li>
-                <li><a href="../link/page.html"><h3>페이지 링크</h3></a></li>
-                <li><a href="../link/event.html"><h3>이벤트/프로모션 링크</h3></a></li>
-                <li><a href="../link/dynamic.html"><h3>다이나믹 배너</h3></a></li>
-                <li><a href="../link/category_create.html"><h3>카테고리 배너</h3></a></li>
-                <li><a href="#!"><h3>검색 위젯</h3></a></li>
-            </ul>
+        <div class="item">
+            <!-- 활성화 된 메뉴 h2 태그에 active class 추가 -->
+            <h2 class="active"><a href="../link/link.html">상품 생성</a></h2>
+            <div class="sub-list">
+                <ul class="sub-menu">
+                    <li><a href="../link/link.html"><h3>상품 생성</h3></a></li>
+                    <li><a href="../link/page.html"><h3>페이지 링크</h3></a></li>
+                    <li><a href="../link/event.html"><h3>이벤트/프로모션 링크</h3></a></li>
+                    <li><a href="../link/dynamic.html"><h3>다이나믹 배너</h3></a></li>
+                    <li><a href="../link/category_create.html"><h3>카테고리 배너</h3></a></li>
+                    <li><a href="#!"><h3>검색 위젯</h3></a></li>
+                </ul>
+            </div>
         </div>
         <div class="item">
             <h2><a href="../report/performance.html">리포트</a></h2>
-            <ul class="sub-menu">
-                <li>
-                    <h3>실적 리포트</h3>
-                    <ul class="list">
-                        <li><a href="../report/performance.html">실적 리포트</a></li>
-                        <li><a href="../report/dynamic.html">다이나믹배너 리포트</a></li>
-                        <li><a href="../report/detail.html">상세 실적 리포트</a></li>
-                        <li><a href="#!">추천인 리포트</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>정산 리포트</h3>
-                    <ul class="list">
-                        <li><a href="../report/calculate.html">정산 리포트</a></li>
-                        <li><a href="../report/payable.html">지급 리포트</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>다운로드</h3>
-                    <ul class="list">
-                        <li><a href="../report/download.html">리포트 다운로드</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="sub-list">
+                <ul class="sub-menu">
+                    <li>
+                        <h3>실적 리포트</h3>
+                        <ul class="list">
+                            <li><a href="../report/performance.html">실적 리포트</a></li>
+                            <li><a href="../report/dynamic.html">다이나믹배너 리포트</a></li>
+                            <li><a href="../report/detail.html">상세 실적 리포트</a></li>
+                            <li><a href="#!">추천인 리포트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>정산 리포트</h3>
+                        <ul class="list">
+                            <li><a href="../report/calculate.html">정산 리포트</a></li>
+                            <li><a href="../report/payable.html">지급 리포트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>다운로드</h3>
+                        <ul class="list">
+                            <li><a href="../report/download.html">리포트 다운로드</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="item">
             <h2><a href="../api/index_01.html">API 센터</a></h2>
-            <ul class="sub-menu">
-                <li><a href="../api/index_01.html"><h3>API key 발급</h3></a></li>
-            </ul>
+            <div class="sub-list">
+                <ul class="sub-menu">
+                    <li><a href="../api/index_01.html"><h3>API key 발급</h3></a></li>
+                </ul>
+            </div>
         </div>
         <div class="item">
             <h2><a href="../service/faq.html">고객센터</a></h2>
-            <ul class="sub-menu">
-                <li>
-                    <h3>이용 문의</h3>
-                    <ul class="list">
-                        <li><a href="../service/faq.html">자주 묻는 질문</a></li>
-                        <li><a href="../service/inquiry_list.html">문의하기</a></li>
-                        <li><a href="../service/notice.html">공지사항</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>이용 가이드</h3>
-                    <ul class="list">
-                        <li><a href="../service/use_partners.html">파트너스 가이드</a></li>
-                        <li><a href="../service/use_dynamic.html">다이나믹 배너 가이드</a></li>
-                        <li><a href="../service/use_api.html">파트너스 API 가이드</a></li>
-                    </ul>
-                </li>
-                <li><a href="../service/terms.html"><h3>이용약관</h3></a></li>
-                <li><a href="../service/policy.html"><h3>운영정책</h3></a></li>
-                <li><a href="../service/privacy.html"><h3>개인정보 처리방침</h3></a></li>
-            </ul>
+            <div class="sub-list">
+                <ul class="sub-menu">
+                    <li>
+                        <h3>이용 문의</h3>
+                        <ul class="list">
+                            <li><a href="../service/faq.html">자주 묻는 질문</a></li>
+                            <li><a href="../service/inquiry_list.html">문의하기</a></li>
+                            <li><a href="../service/notice.html">공지사항</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>이용 가이드</h3>
+                        <ul class="list">
+                            <li><a href="../service/use_partners.html">파트너스 가이드</a></li>
+                            <li><a href="../service/use_dynamic.html">다이나믹 배너 가이드</a></li>
+                            <li><a href="../service/use_api.html">파트너스 API 가이드</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../service/terms.html"><h3>이용약관</h3></a></li>
+                    <li><a href="../service/policy.html"><h3>운영정책</h3></a></li>
+                    <li><a href="../service/privacy.html"><h3>개인정보 처리방침</h3></a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="util-menu">
@@ -285,7 +298,7 @@
                                         <div class="inp-area">
                                             <div class="inp-group">
                                                 <button type="button" class="ico ico-cal"></button>
-                                                <input type="text" id="inp7" placeholder="날짜 선택" readonly>
+                                                <input type="text" name="daterange" placeholder="날짜 선택">
                                             </div>
                                         </div>
                                     </div>
@@ -365,7 +378,7 @@
                                         <div class="inp-area">
                                             <div class="inp-group">
                                                 <button type="button" class="ico ico-cal"></button>
-                                                <input type="text" id="inp8" placeholder="날짜 선택" readonly>
+                                                <input type="text" name="daterange" placeholder="날짜 선택" readonly>
                                             </div>
                                         </div>
                                     </div>
