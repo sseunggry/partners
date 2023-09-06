@@ -32,9 +32,9 @@
 	display: none;
 }
 
-.inp .inp-group.ico-upload-group {
+.inp .ico-upload-group {
 	position: relative;
-	padding: 4px 50px 4px 20px;
+	padding: 4px 20px;
 	min-height: 50px;
 	height: auto;
 }
@@ -147,6 +147,7 @@
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	margin-bottom: -10px;
+	width: 90%;
 }
 
 .inp-file-list li {
@@ -725,7 +726,7 @@
 	}
 
 	.inp .ico-upload-group {
-		padding: 2.78vw 2.78vw;
+		padding: 2.78vw;
 		min-height: 11.11vw;
 	}
 
@@ -741,6 +742,7 @@
 
 	.inp-file-list {
 		margin-bottom: 0;
+		width: 100%;
 	}
 
 	.inp-file-list li {
