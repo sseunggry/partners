@@ -122,10 +122,36 @@
         </div>
     </div>
     <div class="util-menu">
-        <a href="../alarm/index.html" class="alarm">
-            <i class="ico ico-alarm"></i>
-            <span>12</span>
-        </a>
+        <div class="alarm-wrap">
+            <a href="#!" class="alarm">
+                <i class="ico ico-alarm"></i>
+                <span>12</span>
+            </a>
+            <div class="alarm-con">
+                <h3 class="tit">알림 <a href="../alarm/index.html" class="btn-more">더보기</a></h3>
+                <div class="alarm-list">
+                    <!-- 새로운 알림은 item 에 new 추가 / 읽은 알림은 item 에 read 추가  -->
+                    <dl class="item new">
+                        <dt>
+                            <span class="tit">[알림] 알림 제목입니다. 알림 제목입니다.[알림] 알림 제목입니다. 알림 제목입니다.[알림] 알림 제목입니다. 알림 제목입니다.</span>
+                            <span class="date">2023-07-12</span>
+                        </dt>
+                        <dd>
+                            알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입 니다 알림 알림 내용입니다. 알림 내용입니다
+                        </dd>
+                    </dl>
+                    <dl class="item read">
+                        <dt>
+                            <span class="tit">[알림] 알림 제목입니다. 알림 제목입니다.[알림] 알림 제목입니다. 알림 제목입니다.[알림] 알림 제목입니다. 알림 제목입니다.</span>
+                            <span class="date">2023-07-12</span>
+                        </dt>
+                        <dd>
+                            알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입 니다 알림 알림 내용입니다. 알림 내용입니다
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
 
         <a href="../mypage/index_01.html" class="user">
             <i class="ico ico-user"></i>
@@ -232,7 +258,7 @@
         <div class="frame">
         
             <!-- contents -->
-            <div class="contents pt-8">
+            <div class="contents">
                 <div class="service-con ">
                     <h2 class="tit-l">알림</h2>
     
@@ -240,7 +266,9 @@
                         <div class="accordion-list notice">
                             <div class="items">
                                 <div class="title">
-                                    <span class="tag">일반</span>
+                                    <div class="tag-con">
+                                        <span class="tag">일반</span>
+                                    </div>
                                     <p class="txt">알림 제목입니다. 알림 제목입니다 알림</p>
                                     <p class="date">2023.08.14</p>
                                 </div>
@@ -251,7 +279,9 @@
                             <!-- 읽은 알림의 경우 read 클래스 추가  -->
                             <div class="items read">
                                 <div class="title">
-                                    <span class="tag">문의등록</span>
+                                    <div class="tag-con">
+                                        <span class="tag">문의등록</span>
+                                    </div>
                                     <p class="txt">알림 제목입니다. 읽은 알림의 경우 텍스트 회색 처리</p>
                                     <p class="date">2023.08.14</p>
                                 </div>

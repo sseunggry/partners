@@ -1,3 +1,4 @@
+/* main */
 .main .contents {
 	padding-top: 60px;
 }
@@ -611,7 +612,7 @@
 
 .floating-wrap {
 	position: fixed;
-	bottom: 180px;
+	bottom: 40px;
 	right: 40px;
 	z-index: 5;
 }
@@ -676,10 +677,53 @@
 .promotion-select.inp-radio-con .inp-con.disabled .btn-con .btn {
 	border-color: #DDD;
 	color: #DDD;
+	background-color: transparent;
+	pointer-events: none;
 }
 
 .promotion-select.inp-radio-con .inp-con.disabled .inp .inp-group {
 	background: #DDD;
+	pointer-events: none;
+}
+
+/* swiper button */
+.swiper-button-prev, .swiper-button-next {
+	color: #222;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	width: 40px;
+	height: 40px;
+}
+
+.swiper-button-next:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: url("../img//common/ico_arrow_right.svg") no-repeat center/100% auto;
+}
+
+.swiper-button-prev:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: url("../img//common/ico_arrow_right.svg") no-repeat center/100% auto;
+	-webkit-transform: rotate(-180deg);
+	    -ms-transform: rotate(-180deg);
+	        transform: rotate(-180deg);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: 10px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: #222;
+}
+
+.swiper-pagination-bullet {
+	width: 8px;
+	height: 8px;
 }
 
 @media (max-width: 1450px) {
@@ -1027,7 +1071,7 @@
 	}
 
 	.floating-wrap {
-		bottom: 52.78vw;
+		bottom: 5.56vw;
 		right: 5.56vw;
 	}
 
@@ -1051,6 +1095,25 @@
 	.floating-wrap .floating-con .txt-list li {
 		margin-bottom: 2.78vw;
 		font-size: 3.33vw;
+	}
+
+	/* swiper button */
+	.swiper-button-prev, .swiper-button-next {
+		width: 8.33vw;
+		height: 8.33vw;
+	}
+
+	.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+		bottom: 2.78vw;
+	}
+
+	.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+		margin: 0 0.83vw;
+	}
+
+	.swiper-pagination-bullet {
+		width: 1.67vw;
+		height: 1.67vw;
 	}
 }
 /*# sourceMappingURL=maps/style.css.map */

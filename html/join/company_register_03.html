@@ -122,10 +122,36 @@
         </div>
     </div>
     <div class="util-menu">
-        <a href="../alarm/index.html" class="alarm">
-            <i class="ico ico-alarm"></i>
-            <span>12</span>
-        </a>
+        <div class="alarm-wrap">
+            <a href="#!" class="alarm">
+                <i class="ico ico-alarm"></i>
+                <span>12</span>
+            </a>
+            <div class="alarm-con">
+                <h3 class="tit">알림 <a href="../alarm/index.html" class="btn-more">더보기</a></h3>
+                <div class="alarm-list">
+                    <!-- 새로운 알림은 item 에 new 추가 / 읽은 알림은 item 에 read 추가  -->
+                    <dl class="item new">
+                        <dt>
+                            <span class="tit">[알림] 알림 제목입니다. 알림 제목입니다.[알림] 알림 제목입니다. 알림 제목입니다.[알림] 알림 제목입니다. 알림 제목입니다.</span>
+                            <span class="date">2023-07-12</span>
+                        </dt>
+                        <dd>
+                            알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입 니다 알림 알림 내용입니다. 알림 내용입니다
+                        </dd>
+                    </dl>
+                    <dl class="item read">
+                        <dt>
+                            <span class="tit">[알림] 알림 제목입니다. 알림 제목입니다.[알림] 알림 제목입니다. 알림 제목입니다.[알림] 알림 제목입니다. 알림 제목입니다.</span>
+                            <span class="date">2023-07-12</span>
+                        </dt>
+                        <dd>
+                            알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입니다 알림 알림 내용입니다. 알림 내용입 니다 알림 알림 내용입니다. 알림 내용입니다
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
 
         <a href="../mypage/index_01.html" class="user">
             <i class="ico ico-user"></i>
@@ -247,7 +273,7 @@
                             <div class="inp inp-upload">
                                 <label for="" class="inp-label">사업자 등록증 사본*</label>
                                 <div class="inp-area">
-                                    <div class="inp-group">
+                                    <div class="inp-group ico-upload-group">
                                         <input type="file" class="inp-file">
                                         <button type="button" class="ico ico-upload"></button>
                                         <input type="text" class="inp-file-text" placeholder="여기를 눌러 사업자 등록증을 업로드하세요!" readonly>
@@ -258,7 +284,7 @@
                             <div class="inp inp-upload">
                                 <label for="" class="inp-label">통장사본 *</label>
                                 <div class="inp-area">
-                                    <div class="inp-group">
+                                    <div class="inp-group ico-upload-group">
                                         <input type="file" class="inp-file">
                                         <button type="button" class="ico ico-upload"></button>
                                         <input type="text" class="inp-file-text" placeholder="여기를 눌러 통장사본을 업로드하세요!" readonly>

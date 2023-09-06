@@ -46,31 +46,31 @@
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/Roboto-Thin.woff2") format("woff");
+	src: url("../fonts/Roboto-Thin.woff") format("woff");
 	font-weight: 100;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/Roboto-Light.woff2") format("woff");
+	src: url("../fonts/Roboto-Light.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/Roboto-Regular.woff2") format("woff");
+	src: url("../fonts/Roboto-Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/Roboto-Medium.woff2") format("woff");
+	src: url("../fonts/Roboto-Medium.woff") format("woff");
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/Roboto-Bold.woff2") format("woff");
+	src: url("../fonts/Roboto-Bold.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -1971,6 +1971,12 @@ section + section {
 }
 
 .util-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-left: auto;
 }
 
@@ -2001,6 +2007,10 @@ section + section {
 	margin-right: 10px;
 }
 
+.util-menu .alarm-wrap {
+	position: relative;
+}
+
 .util-menu .alarm span {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -2015,6 +2025,144 @@ section + section {
 	font-weight: 700;
 	background-color: #F0142F;
 	border-radius: 20px;
+}
+
+.util-menu .alarm-con {
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	width: 300px;
+	background: #FFF;
+	z-index: 3;
+	border-radius: 20px;
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.util-menu .alarm-con.active {
+	display: block;
+}
+
+.util-menu .alarm-con > .tit {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 20px 20px 10px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.util-menu .alarm-con > .tit .btn-more {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.util-menu .alarm-con > .tit .btn-more::after {
+	content: "";
+	display: inline-block;
+	margin: 0;
+	width: 16px;
+	height: 16px;
+	background: url("../img//common/ico_arrow_right.svg") no-repeat center/100% auto;
+	opacity: 1;
+}
+
+.util-menu .alarm-con .alarm-list .item {
+	cursor: pointer;
+}
+
+.util-menu .alarm-con .alarm-list .item dt {
+	position: relative;
+	padding: 12px 40px 12px 20px;
+	font-size: 14px;
+	font-weight: 500;
+	border-top: 1px solid #DDD;
+}
+
+.util-menu .alarm-con .alarm-list .item dt::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url("../img//common/ico_arrow_down.svg") no-repeat center/100% auto;
+}
+
+.util-menu .alarm-con .alarm-list .item dt .tit {
+	overflow: hidden;
+	position: relative;
+	display: -webkit-box;
+	padding-top: 2px;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	word-break: keep-all;
+	white-space: normal;
+	text-overflow: ellipsis;
+}
+
+.util-menu .alarm-con .alarm-list .item dt .date {
+	display: block;
+	margin-top: 8px;
+	font-family: "Roboto", sans-serif;
+}
+
+.util-menu .alarm-con .alarm-list .item dd {
+	display: none;
+	position: relative;
+	padding: 12px 20px;
+	font-size: 14px;
+}
+
+.util-menu .alarm-con .alarm-list .item dd::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #DDD;
+}
+
+.util-menu .alarm-con .alarm-list .item.new .tit::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 6px;
+	height: 6px;
+	background: #F0142F;
+	border-radius: 50%;
+}
+
+.util-menu .alarm-con .alarm-list .item.read dt {
+	color: #999;
+}
+
+.util-menu .alarm-con .alarm-list .item.active {
+	background: #ECEEF3;
+}
+
+.util-menu .alarm-con .alarm-list .item.active dt::after {
+	-webkit-transform: translateY(-50%) rotate(-180deg);
+	    -ms-transform: translateY(-50%) rotate(-180deg);
+	        transform: translateY(-50%) rotate(-180deg);
 }
 
 .util-menu .user {
@@ -2099,11 +2247,14 @@ section + section {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	padding: 34px 0;
+	height: 140px;
 	background-color: #444;
 	text-align: center;
 }
@@ -2174,6 +2325,16 @@ section + section {
 	}
 }
 @media (max-width: 960px) {
+	.wrap {
+		padding: 80px 0 0;
+	}
+
+	.frame {
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+	}
+
 	/* header */
 	.menu-list {
 		display: none;
@@ -2386,7 +2547,7 @@ section + section {
 }
 @media (max-width: 720px) {
 	.wrap {
-		padding: 19.44vw 0 48.61vw;
+		padding: 15.44vw 0 0;
 	}
 
 	.contents {
@@ -2404,11 +2565,11 @@ section + section {
 	/* header */
 	.header {
 		padding: 0 4.17vw;
-		height: 19.44vw;
+		height: 15.44vw;
 	}
 
 	.header .logo a {
-		width: 25vw;
+		width: 22vw;
 	}
 
 	.header .ico-menu {
@@ -2444,12 +2605,12 @@ section + section {
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
-		height: 19.44vw;
+		height: 15.44vw;
 	}
 
 	.mob-menu .top .logo a {
 		margin-right: 0;
-		width: 25vw;
+		width: 22vw;
 	}
 
 	.mob-menu .top .ico-close {
@@ -2760,7 +2921,7 @@ body.popView {
 .data-add-pop .product-list-wrap {
 	overflow: auto;
 	padding-right: 10px;
-	height: 310px;
+	height: 370px;
 }
 
 .data-add-pop .paging {

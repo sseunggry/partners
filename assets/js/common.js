@@ -60,6 +60,8 @@ $(function(){
 });
 
 function gnbEventFn(){
+	let $wrap = document.querySelector(".wrap");
+
 	$(".header .menu-list .item h2").on("mouseenter", function(){
 		$(".header .menu-list .item h2").removeClass("active");
 		$(".header .menu-list .item .sub-list").removeClass("active");
@@ -75,6 +77,42 @@ function gnbEventFn(){
 	$(".header").on("mouseleave", function(){
 		$(".header .menu-list .item .sub-list").removeClass("active");
 	});
+
+	$(".header .util-menu .alarm").on("click", function(e){
+		e.stopPropagation();
+
+		let $this = $(this),
+			alarmCon = $this.siblings(".alarm-con");
+
+		if( !alarmCon.hasClass("active") ) {
+			alarmCon.stop().slideDown("300").addClass("active");
+			$wrap.addEventListener("click", alarmClickTrigger);
+		} else{
+			alarmCon.stop().slideUp("300").removeClass("active");
+			$wrap.removeEventListener("click", alarmClickTrigger);
+		}
+	});
+
+	$(".header .util-menu .alarm-list .item").on("click", function(e){
+		e.stopPropagation();
+
+		let $this = $(this),
+			$detail = $this.find("dd");
+
+		$(".header .util-menu .alarm-list .item dd").stop().slideUp("300");
+
+		if( !$this.hasClass("active") ) {
+			$detail.stop().slideDown("300");
+			$this.addClass("active").siblings().removeClass("active");
+		} else{
+			$detail.stop().slideUp("300");
+			$this.removeClass("active");
+		}
+	});
+}
+
+function alarmClickTrigger(){
+	$(".header .util-menu .alarm-con").stop().slideUp("300").removeClass("active");
 }
 
 function moGnbEventFn(){
