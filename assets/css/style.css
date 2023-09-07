@@ -1,6 +1,7 @@
 /* main */
 .main .contents {
 	padding-top: 60px;
+	padding-left: 40px;
 }
 
 .main .column-con {
@@ -659,6 +660,10 @@
 	background-image: url("../img/common/ico_floating_close.svg");
 }
 
+.floating-wrap.stop {
+	position: absolute;
+}
+
 .promotion-select.inp-radio-con .inp-con .btn-con .btn {
 	border-color: #222;
 	color: #222;
@@ -724,6 +729,10 @@
 .swiper-pagination-bullet {
 	width: 8px;
 	height: 8px;
+}
+
+.join .contents {
+	padding-left: 40px;
 }
 
 @media (max-width: 1450px) {
@@ -795,6 +804,11 @@
 @media (max-width: 720px) {
 	.main .contents {
 		padding-top: 5.56vw;
+		padding-left: 4.17vw;
+	}
+
+	.join .contents {
+		padding-left: 4.17vw;
 	}
 
 	.main .report .list {
@@ -1095,6 +1109,10 @@
 	.floating-wrap .floating-con .txt-list li {
 		margin-bottom: 2.78vw;
 		font-size: 3.33vw;
+	}
+
+	.floating-wrap.stop {
+		position: absolute;
 	}
 
 	/* swiper button */

@@ -46,31 +46,31 @@
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/Roboto-Thin.woff") format("woff");
+	src: url("../fonts/Roboto-Thin.woff2") format("woff");
 	font-weight: 100;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/Roboto-Light.woff") format("woff");
+	src: url("../fonts/Roboto-Light.woff2") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/Roboto-Regular.woff") format("woff");
+	src: url("../fonts/Roboto-Regular.woff2") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/Roboto-Medium.woff") format("woff");
+	src: url("../fonts/Roboto-Medium.woff2") format("woff");
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/Roboto-Bold.woff") format("woff");
+	src: url("../fonts/Roboto-Bold.woff2") format("woff");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -1818,7 +1818,7 @@ body.popView {
 /* wrap */
 .wrap {
 	position: relative;
-	padding: 80px 0 140px;
+	padding-top: 80px;
 	width: 100%;
 	height: 100vh;
 }
@@ -1832,14 +1832,14 @@ body.popView {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	position: relative;
-	height: 100%;
+	min-height: 100%;
 	background-color: #ECEEF3;
 }
 
 .contents {
 	overflow: auto;
 	margin: 0 auto;
-	padding: 30px 40px 80px;
+	padding: 30px 40px 80px 280px;
 	width: 100%;
 	max-width: 1680px;
 	height: 100%;
@@ -1886,6 +1886,10 @@ section + section {
 	-ms-flex-negative: 0;
 	    flex-shrink: 0;
 	width: 120px;
+}
+
+.mob-menu {
+	display: none;
 }
 
 .menu-list {
@@ -2177,6 +2181,9 @@ section + section {
 /* nav */
 .nav {
 	overflow: hidden auto;
+	position: fixed;
+	top: 80px;
+	left: 0;
 	padding: 40px 20px 0 0;
 	-ms-flex-negative: 0;
 	    flex-shrink: 0;
@@ -2325,14 +2332,8 @@ section + section {
 	}
 }
 @media (max-width: 960px) {
-	.wrap {
-		padding: 80px 0 0;
-	}
-
-	.frame {
-		height: -webkit-fit-content;
-		height: -moz-fit-content;
-		height: fit-content;
+	.contents {
+		padding-left: 40px;
 	}
 
 	/* header */
@@ -3054,6 +3055,14 @@ body.popView {
 
 .roboto {
 	font-family: "Roboto", sans-serif;
+}
+
+button:focus, textarea:focus, input:focus {
+	outline: none;
+}
+
+input, textarea, button, select, a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .mt-0 {

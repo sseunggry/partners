@@ -50,6 +50,17 @@ $(function(){
 		$("#chk_all").prop("checked", chk);
 	});
 
+	$(window).scroll(function(){
+		let footerH = $(".footer").outerHeight(),
+			$floatingWrap = $(".floating-wrap");
+
+		if($(this).scrollTop() >= $(document).height() - $(window).height() - footerH){
+			$floatingWrap.addClass("stop");
+		} else{
+			$floatingWrap.removeClass("stop");
+		}
+	});
+
 
 	gnbEventFn();
 	selectClickFn();
@@ -57,7 +68,20 @@ $(function(){
 	tabActiveFn();
 	productHoverFn();
 	floatingBtnFn();
+	floatingFixFn();
 });
+
+function floatingFixFn(){
+	let $floatingWrap = $(".floating-wrap");
+
+	console.log($(document).height(), $floatingWrap.outerHeight(),$(window).height(), $(document).height() - $floatingWrap.outerHeight() <= $(window).height());
+
+	if($(document).height() <= $(window).height() ){
+		$floatingWrap.addClass("stop");
+	} else{
+		$floatingWrap.removeClass("stop");
+	}
+}
 
 function gnbEventFn(){
 	let $wrap = document.querySelector(".wrap");
