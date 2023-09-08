@@ -661,6 +661,7 @@
 }
 
 .floating-wrap.stop {
+	display: none !important;
 	position: absolute;
 }
 
