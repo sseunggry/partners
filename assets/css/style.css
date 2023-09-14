@@ -661,8 +661,7 @@
 }
 
 .floating-wrap.stop {
-	display: none !important;
-	position: absolute;
+	display: none;
 }
 
 .promotion-select.inp-radio-con .inp-con .btn-con .btn {

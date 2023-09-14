@@ -140,6 +140,12 @@
 	display: none;
 }
 
+.inp.inp-upload.type2 .btn-con {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
 .inp-file-list {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -673,6 +679,72 @@
 	text-align: center;
 }
 
+.login {
+	padding-top: 0;
+	background-color: #ECEEF3;
+}
+
+.login .white-box {
+	padding: 80px 40px;
+}
+
+.login .contents {
+	padding: 0;
+}
+
+.login section {
+	width: 700px;
+}
+
+.login .logo {
+	margin: 0 auto 30px;
+	width: 220px;
+}
+
+.login .login-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-top: 30px;
+}
+
+.login .login-menu li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.login .login-menu li::after {
+	content: "";
+	display: block;
+	margin: 0 20px;
+	width: 1px;
+	height: 16px;
+	background-color: #DDD;
+}
+
+.login .login-menu li:last-of-type:after {
+	display: none;
+}
+
+.login .login-menu li a {
+	color: #666;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
 @media (max-width: 1500px) {
 	.mypage-con .column-con {
 		display: block;
@@ -795,6 +867,10 @@
 	.ico-upload-group2 .auth-txt {
 		right: 2.78vw;
 		font-size: 2.5vw;
+	}
+
+	.inp.inp-upload.type2 .btn-con .btn + .btn {
+		margin-left: 2.78vw;
 	}
 
 	.search-con .inp-select .select-area {
@@ -1030,6 +1106,33 @@
 
 	.step-check-con .white-box {
 		padding: 3.47vw 5.56vw;
+	}
+
+	.login .white-box {
+		padding: 11.11vw 5.56vw;
+	}
+
+	.login section {
+		width: 100%;
+	}
+
+	.login .logo {
+		margin: 0 auto 5.56vw;
+		width: 41.67vw;
+	}
+
+	.login .login-menu {
+		margin-top: 6.94vw;
+	}
+
+	.login .login-menu li::after {
+		margin: 0 4.17vw;
+		width: 0.28vw;
+		height: 3.33vw;
+	}
+
+	.login .login-menu li a {
+		font-size: 2.78vw;
 	}
 }
 /*# sourceMappingURL=maps/sub.css.map */
