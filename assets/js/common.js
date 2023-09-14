@@ -9,6 +9,10 @@ $(function(){
 	$(window).resize(function(){
 		windowW = $(window).outerWidth();
 		windowH = $(window).outerHeight();
+
+		if( windowW >= 960 ) {
+			$(".mob-menu").stop().hide();
+		}
 	});
 
 	// accordion-list
