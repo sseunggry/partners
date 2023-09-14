@@ -733,6 +733,10 @@ input[type=date], input:focus {
 	border-radius: 10px;
 }
 
+.mob-menu{
+	display: none;
+}
+
 @media all and (max-width: 720px) {
 	.btn-con .btn + .btn {
 		margin-left: 2.78vw;
