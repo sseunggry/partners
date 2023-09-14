@@ -2730,6 +2730,16 @@ section + section {
 		font-size: 3.33vw;
 	}
 
+	.mob-menu .util-menu .login-menu{
+		width: 100%;
+	}
+
+	.mob-menu .util-menu .login-menu a{
+		display: block;
+		width: 100%;
+		font-size: 2.78vw;
+	}
+
 	.mob-menu .menu {
 		margin: 8.33vw 0 11.11vw;
 	}
@@ -3135,7 +3145,7 @@ button:focus, textarea:focus, input:focus {
 	outline: none;
 }
 
-input, textarea, button, select, a, .inp-select, .product .item {
+*, input, textarea, button, select, a, .inp-select, .product .item {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
